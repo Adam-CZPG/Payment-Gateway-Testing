@@ -1,0 +1,61 @@
+In this post, you’ll learn how to write test cases for bank transaction. Each bank has it’s own flow for money transfer. 
+So it is hard to generalize the flow for all the banks. So I am attempting come up with a flow that most of the banks are likely to have in their own money transfer 
+process. You may find a lot of difference depending on the type of the bank that you are using. 
+
+Let me jot down some of the common test steps to follow for this workflow.
+
+Test Steps for Bank Transaction
+
+Go to the bank website login page.
+Input username and password.
+Go to money transfer page.
+Add the beneficiary to whom you want to transfer money.
+Check the details of bank account and person. Verify if they are correct.
+Select the specific money transfer method from NEFT/RTGS or SWIFT transfer options.
+Select the beneficiary name, funds and then submit the details.
+Verify the amount and other details on verification page.
+Click submit for final action of fund transfer.
+
+These are the test steps which you’ll find with almost every bank in India. 
+If you are reading this from another country then the flow of bank transaction may be different. 
+For example some of you may have SMS authentication before sending the money. 
+Some of you are likely to have other means of verifying the details of beneficiary to avoid sending the money to wrong person. 
+But that being said, flow is pretty much the same for most banks.
+
+There is also one more option of the adding beneficiary in the Indian banks. 
+So the image below shows the number of fields that you can validate and write test cases for as well.
+
+bank transaction test cases
+
+If you add the test cases for each page then the test cases will be a lot covering the basic aspects of the tests.
+
+Test Cases for Online Bank Money Transfer
+
+Verify the bank website URL.
+Verify if the bank website URL has HTTPS on the address bar and in the URL.
+Verify if the bank website login page does not appear forged.
+Verify if the bank login page has username and password.
+Verify the username and password are being accepted or not.
+Verify if the SMS authentication is triggered after login.
+Verify if the user is redirected to the dashboard after passing all authentication processes.
+Verify if the user has access to the online money transfer feature.
+Check if the user can transfer funds option is available during specific time period (9 am to 5pm).
+Check if the fund transfer option shows notice for off-business hours transaction.
+Verify if the user can add the beneficiary.
+Verify if the beneficiary details can be verified.
+Verify if the fund transfer option allows NEFT or RTGS option for nationalized money transfers.
+Verify if the fund transfer page asks for beneficiary name, IFSC code, bank name and fund amount and purpose of transfer.
+Verify if the fund transfer page asks for PAN number if the amount of funds gets over 50k.
+Check if the fund transfer page has an 2-step authentication before you finalize transfer.
+Check if the inter bank fund transfer happens instantly or not.
+Check if the amount of time it takes for the funds transferred between the in-business hours.
+Check if the amount of time it takes for the funds transferred between the off-business hours.
+Check if the amount transferred notification is sent to sender and receiver.
+Check if the amount gets transferred to the exact person mentioned in the beneficiary.
+
+These are some of test cases that you can come up with for most of the common flow for the bank transfer. 
+Feel free to let me know if you have any other questions or suggestions to improve the test cases mentioned in the post. 
+I’d appreciate the comments below and also please do share the link of this post on Facebook or twitter. 🙂
+
+ 
+
