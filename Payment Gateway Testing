@@ -1,0 +1,93 @@
+Payment gateways act as a window between the e-commerce website/application and the bank. 
+They ensure that the transaction occurs in a secured form by encrypting customer details. 
+They make the whole online shopping experience smooth and hassle-free and free us from the stress of online frauds.
+With the payment gateways being so important, as they carry a lot of personal information, they must function well and do not fail at any cost.
+Therefore, it is important that the payment gateway goes through various testing phases before we associate it with any site.
+Let us look at the different testing ways that we must take into consideration before launching a payment gateway.
+
+Functional Testing – This form of testing ensures that the gateway is fully functional with all its features working as specified. 
+This helps in verifying that the application page and the gateway, both are behaving in the correct manner.
+
+Performance Testing – This is for ensuring that no matter what number of customers are using the gateway, it should not affect its functioning.
+
+Security – The gateway must go through a secure page and all the data should be encrypted as it contains sensitive information. 
+There should be a deep security check before enabling any gateway.
+Below are different test cases for each testing phase, created for a fault-free, fully functional payment gateway.
+
+
+
+Content	
+UI Test Cases for Payment Gateway
+Functional Test Cases for Payment Gateway
+Security Test Cases for Payment Gateway
+Performance Test Cases for Payment Gateway
+
+UI Test Cases for Payment Gateway
+
+Check if all the labels and boxes are visible.
+Verify the payment gateway company logo or name.
+Check if the credit card number is masked or not.
+Verify that all the payment options are visible.
+Check if the color scheme matches the specifications.
+
+
+Functional Test Cases for Payment Gateway
+
+Check if each of the payment options is selectable.
+Check if the default credit/debit card gets automatically added.
+Verify that the page does not proceed to the payment page before all the mandatory information is filled.
+Check if multiple cards can be saved as default or not.
+Verify that the correct currency is reflected on the page.
+Check if the payment is not getting processed for null values in the cart.
+Verify if multiple payment options are not getting selected. Only one at a time.
+Check if the payment is not getting proceeded with an expired/blocked card.
+
+Verify cases like-
+
+Credit/debit card number+wrong date+ right cvv
+Credit/debit card number+ right date+ wrong cvv
+Wrong credit/debit card number+ right date+ right cvv
+And some other similar combinations
+
+Check if the user gets a confirmation message or mail if the payment is successful.
+Check if a pop-up appears if the session has expired.
+Verify that the user gets information about unsuccessful payment.
+Check if double payment is not occurring in any case.
+Check what happens after the session gets expired. Does the payment still occur?
+Verify if the respective payment option triggers the right payment gateway.
+Check if the user is directed back to the application after a successful transaction.
+Check what happens if the payment gets stopped midway. Does the amount still gets deducted?
+Check if the pop-up blocker during the payment is functional.
+Check if the application page is not getting redirected to some other page or link.
+
+
+
+
+Security Test Cases for Payment Gateway
+
+Verify if the credit card information is in a masked form.
+Check that the payment is happening through a secured channel. i.e the link starts with HTTPS instead of the regular HTTP pages.
+Verify if the OTP reaches only the verified number linked with the card.
+Verify if the transaction gets canceled if the wrong OTP is entered.
+Check if it cannot be entered multiple times. A hacker can do a brute force attack by entering various combinations.
+Check if the session gets expired within the specified time.
+Verify that the person gets notified if the wrong OTP is entered.
+Check that it does not reflect on multiples numbers.
+Verify the bank name reflecting on the payment page is the same as the user.
+Check if the amount deducted is the same as the amount mentioned.
+
+
+Performance Test Cases for Payment Gateway
+
+Check if the payment gateway does not crash if multiple users are using it simultaneously.
+Check if the processor is responding quickly.
+Verify the time taken to reach the payment gateway from the application’s page is the same as specified.
+Verify if the page is secured from brute force or SQL injection attacks.
+Check if once logged in, the back button does not log out the user from the application.
+Check if the payment is happening even after the session expires.
+
+
+
+Conclusion
+While writing test scenarios for things like payment gateways, login pages, bank applications, etc. 
+all these scenarios must be kept in mind as they involve sensitive information of the customer.
