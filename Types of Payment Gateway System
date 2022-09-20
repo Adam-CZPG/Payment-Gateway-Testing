@@ -1,0 +1,61 @@
+Hosted Payment Gateway:
+Hosted payment gateway system direct customer away from an e-commerce site to gateway link during the payment process. Once the payment is done, it will bring a customer back to an e-commerce site. For such type of payment you don’t need a merchant id, an example of a hosted payment gateway are PayPal, Noche, and WorldPay.
+
+Shared Payment Gateway:
+In a shared payment gateway, while processing payment customer is directed to the payment page and stays on the e-commerce site. Once the payment detail is filled, the payment process proceeds. Since it does not leave the e-commerce site while processing payment, this mode is easy and more preferable, an example of a shared payment gateway is eWay, Stripe.
+
+Testing Types for Payment Domain
+Testing for Payment Gateway should include
+
+Functional Testing: It is the act of testing the base functionality of the payment gateway. It is to verify whether the application behaves in the same way as it is supposed to be like handling orders, calculation, an addition of VAT as per the country etc.
+
+Integration: Test integration with your credit card service.
+
+Performance: Identify various performance metrics like the highest possible number of users coming through gateways during a specific day and converting them to concurrent users
+
+Security: You need to perform a deep security pass for Payment Gateway.
+
+How to test Payment Gateway: Complete Checklist
+Before you begin testing –
+
+Collect proper test data for the dummy credit card number for the maestro, visa, master etc.
+Collect payment gateway information like Google Wallet, Paypal or else
+Collect payment gateway document with error codes
+Understand the session and parameters passed through application and payment gateway
+Understand and test the amount related information passed through query string or variable or session
+Along with payment gateway language check the language of the application
+Under the various settings of payment gateway like currency format, subscriber data collected.
+Example Test Cases for Payment Gateway Testing
+
+Following are important Test Scenarios/Cases to check Payment Gateway
+
+Sr#	Test Cases
+1	During the payment process try to change the payment gateway language
+2	After successful payment, test all the necessary components, whether it is retrieved or not
+3	Check what happens if payment gateway stops responding during payment
+4	During the payment process check what happens if the session ends
+5	During the payment process check what happens in the backend
+6	Check what happens if payment process fails
+7	Check the Database entries whether they store credit card details or not
+8	During the payment process check error pages and security pages
+9	Check settings of pop-up blocker, and see what happens if a pop-up blocker is on and off
+10	Between payment gateway and application check buffer pages
+11	Check on successful payment, a success code is sent to the application and a confirmation page is shown to the user
+12	Verify whether the transaction processes immediately or processing is hand to your bank
+13	After successful transaction check if the payment gateway returns to your application
+14	Check all format and messages when successful payment process
+15	Unless you don’t have an authorization receipt from the payment gateway, good should not be shipped
+16	Inform the owner for any transaction processed through e-mail. Encrypt the content of the mail
+17	Check the amount format with currency format
+18	Check if each of the payment options is selectable
+19	Check if each listed payment option opens the respective payment option according to specification
+20	Verify whether the payment gateway defaults to the desired debit/credit card option
+21	Verify the default option for debit card shows card selection drop down menu
+Things to consider before Buying Gateway Package
+If you have bought a shopping cart package, find out about its compatibility
+If shopping gateway package is due, ask the payment gateway provider for a list of supported applications
+The gateway must offer Address Verification System Protection
+Find out the types of transaction protection being offered
+Check what types of debit or credit cards are accepted by your chosen payment gateway
+Check the transaction fees levied by a payment gateway
+Check whether the gateways collect the payment right on the form or direct to another page to complete the purchase
